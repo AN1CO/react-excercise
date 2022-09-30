@@ -5,6 +5,7 @@ import { ThemeProvider } from '../hooks/ThemeContext'
 import About from './About'
 import Home from './Home'
 import Nav from './Nav'
+import Stock from './Stock'
 import ThemeWrapper from './ThemeWrapper'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/">
             <Home />
           </Route>
+          <Route path="/stock/:id" render={(props) => <Stock {...props} />} />
         </Switch>
       </ThemeWrapper>
     </ThemeProvider>
