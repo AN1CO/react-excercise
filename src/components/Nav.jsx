@@ -40,6 +40,9 @@ const Nav = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
+        <li>
+          <Link to="/">Stocks</Link>
+        </li>
       </ul>
       <button
         css={css`
