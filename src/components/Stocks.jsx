@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import StyledLink from './StyledLink'
 
 const client = axios.create({
   baseURL: 'https://universal.hellopublic.com/exercises/stocks.json',
@@ -48,7 +48,9 @@ const Stocks = () => {
             `}
             key={stock.symbol}
           >
-            <Link to={`/stock/${stock.symbol}`}>{stock.symbol}</Link>
+            <StyledLink to={`/stock/${stock.symbol}`}>
+              {stock.symbol}
+            </StyledLink>
           </ul>
         ))
       )}

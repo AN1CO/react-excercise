@@ -28,12 +28,25 @@ const ThemeProvider = (props) => {
     },
   }
 
+  const linkTheme = {
+    lightTheme: {
+      color: '#1f4d9b',
+      hover: '',
+      visited: '',
+    },
+    darkTheme: {
+      color: 'turquoise',
+      hover: '',
+      visited: '',
+    },
+  }
+
   const toggleDarkMode = () => {
     setDarkMode((darkMode) => !darkMode)
   }
   return (
     <ThemeContext.Provider
-      value={{ darkMode, toggleDarkMode, theme, buttonTheme }}
+      value={{ darkMode, toggleDarkMode, theme, buttonTheme, linkTheme }}
     >
       {props.children}
     </ThemeContext.Provider>
