@@ -3,6 +3,7 @@ import { css, jsx } from '@emotion/core'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
+import noImage from '../static/no-image-icon.png'
 
 const Stock = () => {
   const params = useParams()
@@ -35,7 +36,11 @@ const Stock = () => {
             {stock.symbol}
           </h1>
           <div>
-            <img src={stock.image} alt={`Logo for ${stock.symbol}`} />
+            {!stock.image ? (
+              <img src={noImage} alt="missing logo" />
+            ) : (
+              <img src={stock.image} alt={`logo for ${stock.symbol}`} />
+            )}{' '}
           </div>
         </>
       )}
