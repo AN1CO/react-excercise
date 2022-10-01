@@ -2,9 +2,9 @@
 import { css, jsx } from '@emotion/core'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const Stock = (props) => {
+const Stock = () => {
   const params = useParams()
   const [stock, setStock] = useState({})
   const loading = Object.keys(stock).length === 0
