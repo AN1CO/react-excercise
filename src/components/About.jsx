@@ -17,11 +17,12 @@ const About = () => (
         line-height: 60px;
       `}
     >
-      Cupcake ipsum dolor sit amet.
+      About Us
     </h1>
     <p>
-      Dessert jelly beans liquorice tootsie roll sweet roll macaroon. Croissant
-      lemon drops gummies candy jujubes muffin bonbon chocolate halvah.
+      Cupcake ipsum dolor sit amet. Dessert jelly beans liquorice tootsie roll
+      sweet roll macaroon. Croissant lemon drops gummies candy jujubes muffin
+      bonbon chocolate halvah.
     </p>
     <p>
       Cookie wafer pastry pie icing brownie marshmallow liquorice jujubes.

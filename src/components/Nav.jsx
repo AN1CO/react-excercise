@@ -41,7 +41,7 @@ const Nav = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/">Stocks</Link>
+          <Link to="/stocks">Stocks</Link>
         </li>
       </ul>
       <button
