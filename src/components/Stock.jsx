@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Stock = () => {
   const params = useParams()
@@ -35,7 +35,7 @@ const Stock = () => {
             {stock.symbol}
           </h1>
           <div>
-            <img src={stock.image} alt="" />
+            <img src={stock.image} alt={`Logo for ${stock.symbol}`} />
           </div>
         </>
       )}

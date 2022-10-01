@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const client = axios.create({
   baseURL: 'https://universal.hellopublic.com/exercises/stocks.json',
 })
 
-const Stocks = (props) => {
+const Stocks = () => {
   const [stocks, setStocks] = useState([])
   const [error, setError] = useState(false)
 
@@ -16,6 +16,7 @@ const Stocks = (props) => {
     client
       .get()
       .then((response) => {
+        console.log(response.data.stocks)
         setStocks(response.data.stocks)
       })
       .catch((err) => {
