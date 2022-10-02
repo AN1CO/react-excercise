@@ -16,7 +16,6 @@ const Stocks = () => {
     client
       .get()
       .then((response) => {
-        console.log(response.data.stocks)
         setStocks(response.data.stocks)
       })
       .catch((err) => {
