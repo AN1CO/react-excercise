@@ -2,12 +2,10 @@ import styled from '@emotion/styled'
 import { Link } from 'react-router-dom'
 
 const StyledLink = styled(Link)`
-  color: turquoise;
-  &:visited {
-    color: '#e3d2fe';
-  }
+  color: inherit;
+  text-decoration: none;
   &:hover {
-    color: '#e3d2fe';
+    text-decoration: underline;
   }
 `
 export default StyledLink

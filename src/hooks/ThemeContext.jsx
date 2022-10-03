@@ -30,13 +30,13 @@ const ThemeProvider = (props) => {
 
   const linkTheme = {
     lightTheme: {
-      color: '#1f4d9b',
+      color: '',
       hover: '',
       visited: '',
     },
     darkTheme: {
       color: 'turquoise',
-      hover: '',
+      hover: '#e3d2fe',
       visited: '',
     },
   }
